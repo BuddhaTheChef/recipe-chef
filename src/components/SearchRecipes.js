@@ -4,7 +4,7 @@ import { Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootst
 class SearchRecipes extends Component {
   render() {
     return (
-      <Form inline>
+      <Form className="form" >
         <FormGroup>
           <ControlLabel>Ingredients</ControlLabel>
         {' '}
