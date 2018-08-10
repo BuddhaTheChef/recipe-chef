@@ -28,7 +28,7 @@ class SearchRecipes extends Component {
 
   render() {
     return (
-      <Form className="form" >
+      <Form className="form">
         <FormGroup>
           <ControlLabel>Ingredients</ControlLabel>
         {' '}
@@ -49,7 +49,7 @@ class SearchRecipes extends Component {
           />
         </FormGroup>
         {' '}
-        <Button onClick={() => this.search()}>Submit</Button>
+        <Button className="search-button" onClick={() => this.search()}>Submit</Button>
       </Form>
     )
   }

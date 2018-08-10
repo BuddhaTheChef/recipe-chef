@@ -6,7 +6,7 @@ class RecipeList extends Component {
   render() {
     console.log('this.props', this.props)
     return (
-      <div>
+      <div className="recipe-div">
         {
           this.props.recipes.map((recipe, index) => {
             return (

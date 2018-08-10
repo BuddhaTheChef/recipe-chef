@@ -10,23 +10,46 @@ html {
   color: whitesmoke;
 }
 
+.main-title {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
 .form-group {
-  width: 100%;
+  width: 25%;
+}
+
+.form-control {
+  width: 95%;
+  text-align: center;
+}
+
+.search-button {
+  align-self: center;
+  margin-top: 15px;
+}
+
+.recipe-div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.form-control {
-  width: 50%;
-  text-align: center;
-}
-
 .recipe-item {
+  color: black;
   display: flex;
+  width: 55%;
+  border: black solid 1px;
+  border-radius: 4px;
+  background-color: whitesmoke;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 10px;
   padding: 5px;
 }
@@ -40,9 +63,8 @@ html {
 
 .recipe-image {
   display: inline-block;
-  right: 0;
-  width: 100px;
-  height: 100px;
+  width: 243px;
+  height: 125px;
   object-fit: cover;
   border: solid black 1px;
   border-radius: 4px;
