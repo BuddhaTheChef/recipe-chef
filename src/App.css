@@ -69,3 +69,10 @@ html {
   border: solid black 1px;
   border-radius: 4px;
 }
+
+.star {
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 15px;
+  color: blue;
+}
