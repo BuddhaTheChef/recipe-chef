@@ -21,13 +21,19 @@ class RecipeItem extends Component {
     return (
       <div className="recipe-item">
         {
-          this.state.favorited ?
-          <div className="star">&#9733;</div>
+          this.props.favoriteButton ?
+
+            this.state.favorited ?
+            <div className="star">&#9733;</div>
+            :
+            <div className="star" onClick={() => this.favorite(recipe)}>
+              &#9734;
+            </div>
+          
           :
-          <div className="star" onClick={() => this.favorite(recipe)}>
-            &#9734;
-          </div>
+          <div></div>
         }
+
         <img className="recipe-image" src={recipe.thumbnail} alt={recipe.title}/>
       <div className="recipe-title">
         <a href={recipe.href}>
