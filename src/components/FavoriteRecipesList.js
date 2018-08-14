@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import RecipeItem from './RecipeItem';
 
 class FavoriteRecipesList extends Component {
   render() {
     return (
       <div>
+        <h4 className="link"><Link to='/'>Home</Link></h4>
         <h4>Favorited</h4>
         {
         this.props.favoriteRecipe.map((recipe, index) => {

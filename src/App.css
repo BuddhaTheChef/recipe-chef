@@ -76,3 +76,9 @@ html {
   margin-left: 15px;
   color: blue;
 }
+
+.link {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
