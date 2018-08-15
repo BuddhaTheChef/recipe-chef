@@ -6,7 +6,7 @@ import RecipeItem from './RecipeItem';
 class FavoriteRecipesList extends Component {
   render() {
     return (
-      <div>
+      <div className="favorited-background-div">
         <h4 className="link"><Link to='/'>Home</Link></h4>
         <h4>Favorited</h4>
         {
