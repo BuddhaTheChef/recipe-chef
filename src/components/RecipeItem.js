@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { favoriteRecipe } from '../actions';
 import { connect } from 'react-redux';
+import noPhoto from '../assets/new-photo-two.png';
 
 class RecipeItem extends Component {
   constructor() {
@@ -29,12 +30,13 @@ class RecipeItem extends Component {
             <div className="star" onClick={() => this.favorite(recipe)}>
               &#9734;
             </div>
-          
+
           :
           <div></div>
         }
-
-        <img className="recipe-image" src={recipe.thumbnail} alt={recipe.title}/>
+      <div className="parent-img-div">
+        <img className="recipe-image" src={recipe.thumbnail ? recipe.thumbnail : noPhoto } alt="Nothing Here"/>
+      </div>
       <div className="recipe-title">
         <a href={recipe.href}>
           <h4>{recipe.title}</h4>

@@ -30,7 +30,7 @@ class SearchRecipes extends Component {
     return (
       <Form className="form">
         <FormGroup>
-          <ControlLabel>Ingredients</ControlLabel>
+          <ControlLabel className="label">Ingredients</ControlLabel>
         {' '}
         <FormControl
           type="text"
@@ -40,7 +40,7 @@ class SearchRecipes extends Component {
         </FormGroup>
         {' '}
         <FormGroup>
-          <ControlLabel>Dish</ControlLabel>
+          <ControlLabel className="label">Dish</ControlLabel>
           {' '}
           <FormControl
             type="text"
@@ -49,7 +49,7 @@ class SearchRecipes extends Component {
           />
         </FormGroup>
         {' '}
-        <Button className="search-button" onClick={() => this.search()}>Submit</Button>
+        <Button className="btn btn-primary search-button" onClick={() => this.search()}>Submit</Button>
       </Form>
     )
   }

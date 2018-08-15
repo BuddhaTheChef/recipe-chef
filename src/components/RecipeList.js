@@ -10,7 +10,7 @@ class RecipeList extends Component {
       <div className="recipe-div">
         {
           this.props.favoriteRecipe.length > 0 ?
-          <h4 className="link"><Link to='/favorites'>Favorites</Link></h4>
+          <h4><Link to='/favorites' className="btn btn-primary link">Favorites</Link></h4>
           :
           <div></div>
         }

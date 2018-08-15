@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2 className="main-title">Recipe Finder</h2>
+        <h2 className="main-title">Personal Chef</h2>
         <SearchRecipes />
         <RecipeList />
       </div>

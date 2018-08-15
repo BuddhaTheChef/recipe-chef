@@ -1,11 +1,11 @@
 html {
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(58, 58, 58);
 }
 .App{
   width: 100%;
   text-align: center;
   padding: 5%;
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(58, 58, 58);
   height: 100%;
   color: whitesmoke;
 }
@@ -13,6 +13,11 @@ html {
 .main-title {
   margin-bottom: 30px;
   font-size: 40px;
+  text-shadow: 0 0 10px rgb(50, 125, 246), 0 0 15px rgb(50, 125, 246);
+}
+
+.label {
+  font-size: 21px;
 }
 
 .form {
@@ -28,11 +33,13 @@ html {
 .form-control {
   width: 95%;
   text-align: center;
+  box-shadow: 0px 13px 34px 4px rgba(0,0,0,.3);
 }
 
 .search-button {
   align-self: center;
-  margin-top: 15px;
+  margin-top: 22px;
+  box-shadow: 0px 13px 34px 4px rgba(0,0,0,.3);
 }
 
 .recipe-div {
@@ -43,16 +50,18 @@ html {
 }
 
 .recipe-item {
-  color: black;
+  color: whitesmoke;
   display: flex;
   width: 55%;
-  border: black solid 1px;
+  border: rgb(60,60,60) solid 3px;
   border-radius: 4px;
-  background-color: whitesmoke;
+  background-color: rgb(70, 70, 70);
   align-items: center;
   justify-content: space-around;
   margin: 10px;
   padding: 5px;
+  margin-bottom: 25px;
+  box-shadow: 0px 13px 34px 4px rgba(0,0,0,.3);
 }
 
 .recipe-title {
@@ -62,26 +71,34 @@ html {
   width: 400px;
 }
 
+.parent-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .recipe-image {
   display: inline-block;
   width: 243px;
   height: 125px;
   object-fit: cover;
-  border: solid black 1px;
+  border: solid rgb(60,60,60) 1px;
   border-radius: 4px;
+  text-align: center;
 }
 
 .star {
   cursor: pointer;
   font-size: 30px;
   margin-left: 15px;
-  color: blue;
+  color: rgb(50, 125, 246);
 }
 
 .link {
   position: absolute;
-  left: 30px;
-  top: 30px;
+  left: 40px;
+  top: 40px;
+  box-shadow: 0px 13px 34px 4px rgba(0,0,0,.3);
 }
 
 .favorited-background-div {
@@ -89,5 +106,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5%;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.favroited-title {
+  color: whitesmoke;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgb(50, 125, 246), 0 0 15px rgb(50, 125, 246);
 }
